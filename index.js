@@ -7,9 +7,11 @@ new Vue({
     changeTitle: function (event) {
       this.title = event.target.value;
     },
-    //In {{ }}, HTML can execute any functions.
+    //Actually, "this" is not referring "data",
+    //however, Vue.js is proxying and handling between data and methods,
+    //therefore you can access the data you desired.
     sayHello: function(){
-      return 'Hello from Vue.js';
+      return this.title;
     }
   }
 });
