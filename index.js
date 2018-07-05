@@ -1,11 +1,15 @@
 new Vue({
-	el: '#app',
+  el: '#app',
   data: {
-  title: 'hello world'
+    title: 'hello world'
   },
-  methods:{
-  changeTitle: function(event){
-  	this.title = event.target.value;
+  methods: {
+    changeTitle: function (event) {
+      this.title = event.target.value;
+    },
+    //In {{ }}, HTML can execute any functions.
+    sayHello: function(){
+      return 'Hello from Vue.js';
+    }
   }
-}
 });
