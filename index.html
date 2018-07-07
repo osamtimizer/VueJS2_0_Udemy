@@ -11,15 +11,8 @@
 
 <body>
     <div id='app'>
-        <h1 v-once>{{ title }}</h1>
-        <input type="text" v-on:input="changeTitle">
-        <!-- Normally, Vue.js is only handling bind in Text, not in elements -->
-        <!-- You need to v-bind attribute -->
-        <p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
-        <hr>
-        <p v-html="finishedLink"></p>
-
-    </div>
-    <script src="./index.js"></script>
+        <button v-on:click="increase">Click me</button>
+        <p>{{counter}}</p>
+        <script src="./index.js"></script>
     </body>
 </html>
