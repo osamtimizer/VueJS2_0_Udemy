@@ -11,6 +11,7 @@
 
 <body>
     <div id='app'>
+        <h1 v-once>{{ title }}</h1>
         <input type="text" v-on:input="changeTitle">
         <!-- Normally, Vue.js is only handling bind in Text, not in elements -->
         <!-- You need to v-bind attribute -->
