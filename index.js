@@ -12,6 +12,9 @@ new Vue({
     updateCoordinate: function(event){
       this.x = event.clientX;
       this.y = event.clientY;
+    },
+    dummy: function(event){
+      event.stopPropagation();
     }
   }
 });
